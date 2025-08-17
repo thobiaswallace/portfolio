@@ -70,7 +70,7 @@ nav a {
   width: 16.4rem;
 }
 
-#contatcts {
+#contacts {
   background-color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
@@ -138,4 +138,59 @@ footer h3 {
 
 #redes-sociais {
   padding-top: 0.4rem;
+}
+
+@media (max-width: 480px) {
+  nav {
+    width: 43.4vh;
+  }
+  #projects {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  #projects img {
+    margin-right: 10rem;
+    width: 23.5rem;
+  }
+
+  #projects #img-3 {
+    width: 23.6rem;
+  }
+
+  #contacts {
+    display: flex;
+    justify-content: center;
+    width: 45vh;
+    margin-top: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  form input[type="text"],
+  form input[type="email"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contacts form input {
+    width: 45vh;
+  }
+
+  #contacts form #box:focus {
+    border-color: 2px solid blue;
+  }
+
+  #contacts #button {
+  }
+
+  footer {
+    width: 45vh;
+    border: 1px solid greenyellow;
+    margin-bottom: 0.5rem;
+  }
 }
