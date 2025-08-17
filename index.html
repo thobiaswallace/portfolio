@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>My portfolio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#about-me">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contatcts">Contatcts</a>
+        <a href="#about-me">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contatcts">Contato</a>
       </nav>
     </header>
     <section id="about-me">
@@ -23,31 +24,46 @@
       </h2>
     </section>
 
+    <h2 id="meus-projetos">Meus projetos</h2>
+
     <section id="projects">
       <img src="img/13eddf87-e45c-4127-9790-8e4cd68c1e10.avif" alt="" />
       <img src="img/images.jfif" alt="" />
-      <img src="img/mokup-01.webp" alt="" />
+      <img id="img-3" src="img/mokup-01.jpg" alt="" />
     </section>
 
     <section id="contatcts">
       <form>
         <!-- /* nome email mensagem envio*/ -->
-        <label for="name">Nome: </label>
-        <input type="text" name="name" id="name" />
-        <label for="email">Email: </label>
-        <input type="email" name="" id="" />
-        <label for="caixa-texto">Deixe sua mensagem: </label>
-        <input type="text" name="" id="" />
-        <input type="button" />
+        <label for="name">NOME </label>
+        <input
+          placeholder="Digite seu nome.."
+          type="text"
+          name="name"
+          id="name"
+        />
+        <label for="email">EMAIL </label>
+        <input
+          placeholder="Digite seu Email.."
+          type="email"
+          name=""
+          id="email"
+        />
+        <label for="caixa-texto">Deixe sua mensagem </label>
+        <input placeholder="Escreva aqui:" type="text" name="" id="box" />
+        <input id="button" type="button" value="Enviar" />
       </form>
     </section>
 
     <footer>
-      <h3>Redes sociais</h3>
-      <a href="#">Linkedin</a>
-      <a href="#">Github</a>
+      <h3>Você pode me achar também nesses canais!</h3>
 
-      <p>&copy; Direitos reservados.</p>
+      <section id="redes-sociais">
+        <a href="#">Linkedin</a>
+        <a href="#">Github </a>
+      </section>
+
+      <h3>&copy; Direitos reservados.</h3>
     </footer>
   </body>
 </html>
